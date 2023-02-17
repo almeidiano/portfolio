@@ -35,12 +35,6 @@ $ cd portfolio
 **Installing dependencies**
 
 ```
-$ yarn
-```
-
-_or_
-
-```
 $ npm install
 ```
 
@@ -51,18 +45,14 @@ With all dependencies installed and the environment properly configured, you can
 NPM
 
 ```
-$ npm start
+$ npm run dev
 ```
-
-YARN
-
-```
-$ yarn start
 
 ## Built With
 
 - [Material UI](https://mui.com/) - Build the UI through this modern library
 - [React Loading Skeleton](https://github.com/dvtng/react-loading-skeleton#readme) - To show the content before fetching my API
+- [Vite ](https://vitejs.dev/) - Is a build tool that aims to provide a faster and leaner development experience for modern web projects
 
 ## Author
 
