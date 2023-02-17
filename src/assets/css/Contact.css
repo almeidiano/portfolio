@@ -1,0 +1,38 @@
+#contact form {
+    display: grid;
+    gap: 15px;
+    padding: 3rem 0px 3rem;
+}
+#contact .container {
+    width: 90%;
+} 
+@media (max-width: 575px) {
+    #contact .section-subtitle {
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width: 550px) {
+    .css-13azlq2-MuiFormControl-root {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px;
+    }
+    .css-1ksywso-MuiFormControl-root-MuiTextField-root {
+        width: 100% !important;
+    }
+}
+
+/* on dark theme */
+html[data-theme='dark'] .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root,
+html[data-theme='dark'] .css-1ff8729-MuiInputBase-root-MuiFilledInput-root,
+html[data-theme='dark'] .css-7209ej-MuiInputBase-input-MuiFilledInput-input {
+    color: rgba(232, 230, 227, 0.87) !important;
+}
+html[data-theme='dark'] .css-o943dk-MuiFormLabel-root-MuiInputLabel-root {
+    color: rgba(232, 230, 227, 0.6);
+}
+html[data-theme='dark'] .css-1ff8729-MuiInputBase-root-MuiFilledInput-root:before,
+html[data-theme='dark'] .css-85zwa9-MuiInputBase-root-MuiFilledInput-root:before {
+    border-color: rgba(140, 130, 115, 0.42)!important;
+}

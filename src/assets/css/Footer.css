@@ -1,0 +1,14 @@
+footer {
+    background-color: var(--Monochromatic-primary);
+    color: rgb(232, 230, 227);
+    padding: 25px;
+    text-align: center;
+}
+.footer-credits {
+    display: flex;
+    flex-direction: column;
+}
+.footer-credits span a {
+    text-decoration: none;
+    color: rgb(232, 230, 227);
+}

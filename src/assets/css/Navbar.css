@@ -1,0 +1,85 @@
+nav {
+    z-index: 2 !important;
+    transition: 0.5s;
+    width: 100%;
+    position: fixed;
+    line-height: 80px;
+    display: flex;
+}
+
+.nav-activated {
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #00000030
+}
+.nav-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+nav .logo {
+    width: 50%;
+    display: flex;
+}
+nav .logo a{
+    display: flex;
+    align-items: center;
+}
+nav .logo img {
+    height: 45px;
+}
+nav .nav-items {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 50px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin: 0px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #e6e6e6;
+    transition: 0.5s;
+    display: flex;
+    color: var(--text-primary-blue);
+}
+.toggle-item,
+.hamburguer-item {
+    display: flex;
+    align-items: center;
+}
+.hamburguer-item {
+    display: none;
+}
+.toggle-item {
+    color: var(--primary-white);
+}
+/* dark and light mode icons from toggle */
+.react-toggle-track-check svg,
+.react-toggle-track-x svg {
+    top: -5px;
+    margin: 0;
+    position: relative;
+    left: -5px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+ nav ul li,
+ .toggle-item{
+    display: none;
+ }
+ .hamburguer-item {
+    display: flex;
+ }
+ .hamburguer-item svg {
+    height: 35px;
+    width: 35px;
+ }
+}

@@ -1,0 +1,116 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+}
+.about-img {
+    display: flex;
+    align-items: center;
+}
+.about-img img{
+    width: 350px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.about-info img{
+    width: 35px;
+}
+.social-media{
+    display: flex;
+}
+.social-media a{
+    margin-right: 15px;
+}
+.social-media svg{
+    color: var(--text-primary-blue);
+    margin-top: 30px;
+    font-size: 40px;
+}
+.social-media svg:hover{
+    color: var(--dark-background);
+}
+.stacks{
+    background-color: var(--secondary-background);
+    margin-top: 5rem;
+    padding: 50px;
+}
+.stack {
+    font-size: 12px;
+    display: grid;
+    text-align: center;
+}
+.stacks-container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    transition: .5s ease all;
+}
+.stack img {
+    height: 50px;
+    width: 50px;
+    filter: brightness(0);
+    filter: contrast(0.6);
+}
+.loading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.show-all {
+    font-size: var(--smaller-font-size);
+    position: relative;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1024px) {
+    /* stacks */
+    .stacks-container {
+        width: 95%;
+    }
+}
+@media (max-width: 968px) {
+    /* about */
+    .about {
+        width: 90%;
+        display: flex !important;
+        flex-direction: column;
+    }
+    .about-img,
+    .social-media {
+        justify-content: center;
+    }
+    .about-img {
+        padding: 25px 0px;
+    }
+    .about-info p {
+        text-align: center;
+    }
+}
+@media (max-width: 550px) {
+    .stacks-container {
+        width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    .stack {
+        font-size: 0;
+    }
+    .stack img {
+        height: 35px;
+        width: 35px;
+    }
+}
+@media (max-width: 375px) {
+    .about-img img {
+        width: 300px;
+    }
+}
+
+/* dark mode */
+html[data-theme='dark'] .social-media svg {
+    color: #d7d3ce !important;
+}
