@@ -1,6 +1,7 @@
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import GenerateBros from './GenerateBros';
 
 export default function Header() {
   return (
@@ -15,7 +16,8 @@ export default function Header() {
               <Button href='#contact' className='main-button' variant="contained" endIcon={<SendIcon />}>Fale Comigo</Button>
             </div>
             <div className="bro-pic">
-              <img src='/bro-pic/dev-activity-bro.svg' />
+              <GenerateBros />
+              {/* <img src='/bro-pic/dev-activity-bro.svg' /> */}
             </div>
           </div>
           <div className='know-me'>

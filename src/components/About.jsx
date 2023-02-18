@@ -1,6 +1,6 @@
 import {GitHub, LinkedIn, YouTube} from '@mui/icons-material';
 import React from 'react';
-import Stacks from './Stacks';
+import Stacks from './api/Stacks';
 import Title from './Title';
 
 export default function About() {

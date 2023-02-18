@@ -1,11 +1,25 @@
 #contact form {
     display: grid;
     gap: 15px;
-    padding: 3rem 0px 3rem;
+    padding: 0rem 0rem 3rem 0rem;
 }
 #contact .container {
     width: 90%;
 } 
+.contact-items {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0rem;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-item svg {
+    color: var(--Monochromatic-primary);
+    font-size: 30px;
+}
 @media (max-width: 575px) {
     #contact .section-subtitle {
         width: 90%;

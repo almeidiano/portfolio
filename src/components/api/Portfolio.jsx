@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
 import Button from '@mui/material/Button';
@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Skeleton from 'react-loading-skeleton';
 import axios from 'axios';
 import Tooltip from '@mui/material/Tooltip';
-import Title from './Title';
+import Title from '../Title';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -16,6 +16,7 @@ import 'react-loading-skeleton/dist/skeleton.css'
 
 export default function Portfolio() {
   const [projects, setProjects] = useState(null);
+  const swiperSkeletonRef = useRef();
 
   useEffect(() => {
     async function getAllProjects() {
@@ -26,13 +27,22 @@ export default function Portfolio() {
     getAllProjects();
   }, [])
 
+  const ProjectLoading = () => {
+    return (
+    // SwiperSlide with skeleton structure
+    <SwiperSlide ref={swiperSkeletonRef}> <div className='project'> <div className='project-img'> <div className='project-thumb'>  <Skeleton height={300} width={320} /> </div> </div> <div className='project-info'> <h2 className='project-title'><Skeleton height={25} width={120} /></h2> <p className='project-desc'><Skeleton height={100} width={300} /></p> <div className='project-techs'> <Skeleton height={35} width={35} /> <Skeleton height={35} width={35} /> <Skeleton height={35} width={35} /> <Skeleton height={35} width={35} /> </div> <div className='button-area'> <Skeleton height={45} width={120} /> <Skeleton height={45} width={120} /> </div> </div> </div> </SwiperSlide>
+    )
+  }
+
   return (
     <section id='portfolio'>
         <Title title='Portfolio' subtitle='Meus projetos mais revelantes' />
         <div className='container-fluid'>
         <Swiper loop={true} navigation={true} pagination={true} modules={[Navigation, Pagination]} className="mySwiper">
         {
-            projects ? projects.map((project) => (
+            projects === null ? <ProjectLoading />
+            :
+            projects.map((project) => (
               <SwiperSlide key={project.id}>
                 <div className='project'>
                   <div className='project-img'>
@@ -60,9 +70,6 @@ export default function Portfolio() {
                 </div>
               </SwiperSlide>
             )) 
-            :
-            // SwiperSlide with skeleton structure
-            <SwiperSlide> <div className='project'> <div className='project-img'> <div className='project-thumb'> <Skeleton height={300} width={320} /> </div> </div> <div className='project-info'> <h2 className='project-title'><Skeleton height={25} width={120} /></h2> <p className='project-desc'><Skeleton height={100} width={300} /></p> <div className='project-techs'> <Skeleton height={35} width={35} /> <Skeleton height={35} width={35} /> <Skeleton height={35} width={35} /> <Skeleton height={35} width={35} /> </div> <div className='button-area'> <Skeleton height={45} width={120} /> <Skeleton height={45} width={120} /> </div> </div> </div> </SwiperSlide> 
           }
         </Swiper>
         </div>

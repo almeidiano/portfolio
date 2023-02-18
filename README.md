@@ -14,9 +14,10 @@ Project rewrited via Vite
 ## :memo: Next Steps:
 
 - [x] Create sidebar 
-- [x] Generate Bros
-- [x] Upload it to my domain
-- [x] Make the form input true
+- [x] ~Generate Bros~
+- [x] ~Upload it to my domain~
+- [x] ~Make the form input true~
+- [x] Validate Form
 
 ## Getting Started
 

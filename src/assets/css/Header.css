@@ -1,5 +1,5 @@
 header{
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,11 +31,15 @@ header p{
   width: 50%;
 }
 .bro-pic img{
-    height: 75%;
+  position: relative;
+  opacity: 0;
 }
 .know-me {
   display: flex;
   align-items: center;
+  position: absolute;
+  bottom: 100px;
+  align-items: end;
 }
 .know-me svg {
   color: #1976d2;
