@@ -12,12 +12,11 @@ export default function Header() {
             <div className="header-info">
               <h1>Samuel Almeida</h1>
               <h3>Desenvolvedor Full-Stack</h3>
-              <p>Desenvolvedor especializado em frontend, com conhecimentos de backend e apaixonado por tecnologias.</p>
+              <p>Desenvolvedor especializado em Front-End, com conhecimentos de Back-End e apaixonado por tecnologias.</p>
               <Button href='#contact' className='main-button' variant="contained" endIcon={<SendIcon />}>Fale Comigo</Button>
             </div>
             <div className="bro-pic">
               <GenerateBros />
-              {/* <img src='/bro-pic/dev-activity-bro.svg' /> */}
             </div>
           </div>
           <div className='know-me'>

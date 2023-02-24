@@ -2,47 +2,60 @@ import React, { useState, useEffect, useRef } from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Skeleton from 'react-loading-skeleton';
 import axios from 'axios';
-import 'react-loading-skeleton/dist/skeleton.css'
+import 'react-loading-skeleton/dist/skeleton.css';
 
 export default function Stacks() {
   const [stacks, setStacks] = useState(null); 
   const stackContainer = useRef();
-  var stackIndex = 0;
+
+  class DisplayStacks { 
+    loop = false;
+    stackResponse = {};
+    stackIndex = 0;
+
+    constructor(stackResponse) {
+      this.stackResponse = stackResponse;
+
+      try {
+        setStacks(this.stackResponse[this.stackIndex].stacks);
+        stackContainer.current.style.opacity = 1;
+        this.stackIndex++;
+        this.loop = true;
+      } catch (error) {
+        throw new Error(`Undefined Stacks: ${error}`)
+      }
+
+      if(this.loop) {
+        const interval = setInterval(() => {
+          stackContainer.current.style.opacity = 0;
+
+          if(this.stackResponse[this.stackIndex]) {
+            setTimeout(() => {
+              setStacks(this.stackResponse[this.stackIndex].stacks);
+              stackContainer.current.style.opacity = 1;
+              this.stackIndex++;
+            }, 500);
+          }else {
+            setTimeout(() => {
+              this.stackIndex = 0;
+              setStacks(this.stackResponse[this.stackIndex].stacks);
+              stackContainer.current.style.opacity = 1;
+              this.stackIndex++;
+            }, 500);
+          }
+        }, 4500);
+        
+        return () => clearInterval(interval);
+      }
+  }
+}
 
   useEffect(() => {
     async function showStacks () {
       const req = await axios.get("https://samuelalmeidadev.com.br/allStacks.json");
       let res = await req.data;
       stackContainer.current.style.opacity = 0;
-
-      if(res[stackIndex]) {
-        setTimeout(() => {
-          setStacks(res[stackIndex].stacks);
-          stackContainer.current.style.opacity = 1;
-          stackIndex++;
-        }, 500);
-      }
-
-      const interval = setInterval(() => {
-        stackContainer.current.style.opacity = 0;
-
-        if (res[stackIndex]) {
-          setTimeout(() => {
-            setStacks(res[stackIndex].stacks);
-            stackContainer.current.style.opacity = 1;
-            stackIndex++;
-          }, 500);
-          } else {
-            setTimeout(() => {
-              stackIndex = 0;
-              setStacks(res[stackIndex].stacks);
-              stackContainer.current.style.opacity = 1;
-              stackIndex++;
-            }, 500);
-          }
-        }, 4500);
-
-      return () => clearInterval(interval);
+      const displayStacks = new DisplayStacks(res);
     }
     
     showStacks();
@@ -69,7 +82,7 @@ export default function Stacks() {
             ))
             } 
         </div>
-        <div className='show-all'>Ver tudo <KeyboardArrowDownIcon /></div>
+        <div className='show-all'><div className='show-el'>Ver tudo <KeyboardArrowDownIcon /></div></div>
     </div>
   )
 }
