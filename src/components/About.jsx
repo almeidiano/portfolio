@@ -1,4 +1,4 @@
-import {GitHub, LinkedIn, YouTube} from '@mui/icons-material';
+import {GitHub, LinkedIn, YouTube, PictureAsPdf} from '@mui/icons-material';
 import React from 'react';
 import Stacks from './api/Stacks';
 import Title from './Title';
@@ -15,6 +15,7 @@ export default function About() {
               <a target='_blank' href='https://github.com/almeidiano'><GitHub /></a>
               <a target='_blank' href='https://www.linkedin.com/in/samuel-de-almeida'><LinkedIn /></a>
               <a target='_blank' href='https://www.youtube.com/@EllSamuellTM'><YouTube /></a>
+              <a target='_blank' href='./curriculum.pdf'><PictureAsPdf /></a>
             </div>
           </div>
         </div>

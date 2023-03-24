@@ -57,7 +57,7 @@ export default function Portfolio() {
                       {
                         project.projectStacks.map((stack) => (
                           <Tooltip title={stack}>
-                            <img src={`./portfolio-icons/${stack}.svg`} />
+                            <img src={`./projects/stacks/${stack}.svg`} />
                           </Tooltip>
                         ))
                       }  

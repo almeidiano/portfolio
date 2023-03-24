@@ -88,6 +88,12 @@
     .swiper-button-next::after {
         font-size: 30px !important;
     }
+    .project .button-area {
+        flex-direction: column;
+    }
+    .project .button-area span span {
+        width: 100% !important;
+    }
     
 }
 html[data-theme='dark'] .css-sghohy-MuiButtonBase-root-MuiButton-root.Mui-disabled {

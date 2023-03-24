@@ -1,10 +1,11 @@
-import {useEffect, useRef, useState} from 'react'
+import {useEffect, useRef, useState, Drawer} from 'react'
 import Logo from '/main-logo.svg';
 import Toggle from 'react-toggle';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import MenuIcon from '@mui/icons-material/Menu';
-import "react-toggle/style.css"
+import "react-toggle/style.css";
+import { List, ListItem, ListItemText } from '@mui/material';
 
 export default function Navbar(props) {
   const navbarRef = useRef();
@@ -38,7 +39,7 @@ export default function Navbar(props) {
   useEffect(() => {
     // Setting theme
     theme ? document.documentElement.setAttribute("data-theme", "dark") : document.documentElement.setAttribute("data-theme", "white")
-  }, [theme])
+  }, [theme]);
 
   return (
     <nav ref={navbarRef}>

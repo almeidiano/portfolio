@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "type": "language",
+    "stacks": [
+      {
+        "id": 1,
+        "stack": "html5",
+        "icon": "./stack-icons/html5.svg"
+      },
+      {
+        "id": 2,
+        "stack": "css3",
+        "icon": "./stack-icons/css3.svg"
+      },
+      {
+        "id": 3,
+        "stack": "javascript",
+        "icon": "./stack-icons/javascript.svg"
+      },
+      {
+        "id": 4,
+        "stack": "typescript",
+        "icon": "./stack-icons/typescript.svg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "language",
+    "stacks": [
+      {
+        "id": 1,
+        "stack": "php",
+        "icon": "./stack-icons/php.svg"
+      },
+      {
+        "id": 2,
+        "stack": "laravel",
+        "icon": "./stack-icons/laravel.svg"
+      },
+      {
+        "id": 3,
+        "stack": "react",
+        "icon": "./stack-icons/react.svg"
+      },
+      {
+        "id": 4,
+        "stack": "react-native",
+        "icon": "./stack-icons/react-native.svg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "cli",
+    "stacks": [
+      {
+        "id": 1,
+        "stack": "npm",
+        "icon": "./stack-icons/npm.svg"
+      },
+      {
+        "id": 2,
+        "stack": "api",
+        "icon": "./stack-icons/api.svg"
+      },
+      {
+        "id": 3,
+        "stack": "git",
+        "icon": "./stack-icons/git.svg"
+      },
+      {
+        "id": 4,
+        "stack": "webpack",
+        "icon": "./stack-icons/webpack.svg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "cli",
+    "stacks": [
+      {
+        "id": 1,
+        "stack": "IoT",
+        "icon": "./stack-icons/iot.svg"
+      },
+      {
+        "id": 2,
+        "stack": "docker",
+        "icon": "./stack-icons/docker.svg"
+      },
+      {
+        "id": 3,
+        "stack": "vite",
+        "icon": "./stack-icons/vite.svg"
+      },
+      {
+        "id": 4,
+        "stack": "threejs",
+        "icon": "./stack-icons/threejs.svg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "webservers&db",
+    "stacks": [
+      {
+        "id": 1,
+        "stack": "sql",
+        "icon": "./stack-icons/sql.svg"
+      },
+      {
+        "id": 2,
+        "stack": "postgres",
+        "icon": "./stack-icons/postgres.svg"
+      },
+      {
+        "id": 3,
+        "stack": "apache",
+        "icon": "./stack-icons/apache.svg"
+      },
+      {
+        "id": 4,
+        "stack": "mysql",
+        "icon": "./stack-icons/mysql.svg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "framework",
+    "stacks": [
+      {
+        "id": 1,
+        "stack": "bootstrap",
+        "icon": "./stack-icons/bootstrap.svg"
+      },
+      {
+        "id": 2,
+        "stack": "tailwind",
+        "icon": "./stack-icons/tailwind.svg"
+      },
+      {
+        "id": 3,
+        "stack": "wordpress",
+        "icon": "./stack-icons/wordpress.svg"
+      },
+      {
+        "id": 4,
+        "stack": "expo",
+        "icon": "./stack-icons/expo.svg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "desktop",
+    "stacks": [
+      {
+        "id": 1,
+        "stack": "windows",
+        "icon": "./stack-icons/windows.svg"
+      },
+      {
+        "id": 2,
+        "stack": "linux",
+        "icon": "./stack-icons/linux.svg"
+      },
+      {
+        "id": 3,
+        "stack": "illustrator",
+        "icon": "./stack-icons/illustrator.svg"
+      },
+      {
+        "id": 4,
+        "stack": "photoshop",
+        "icon": "./stack-icons/photoshop.svg"
+      }
+    ]
+  }
+]

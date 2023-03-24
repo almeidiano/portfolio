@@ -20,6 +20,17 @@
     color: var(--Monochromatic-primary);
     font-size: 30px;
 }
+@media (max-width: 620px) {
+    .contact-items {
+        flex-direction: column;
+    }
+    .contact-item {
+        margin: 5px 0px;
+    }
+    #contact .button-area button {
+        width: 100%;
+    }
+}
 @media (max-width: 575px) {
     #contact .section-subtitle {
         width: 90%;

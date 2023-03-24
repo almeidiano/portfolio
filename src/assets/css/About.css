@@ -71,6 +71,9 @@
     align-items: center;
     cursor: pointer;
 }
+html[data-theme='dark'] .stacks {
+    background-color: rgb(29, 32, 33);
+}
 @media (max-width: 1024px) {
     /* stacks */
     .stacks-container {

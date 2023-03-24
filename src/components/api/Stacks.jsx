@@ -82,7 +82,7 @@ export default function Stacks() {
             ))
             } 
         </div>
-        <div className='show-all'><div className='show-el'>Ver tudo <KeyboardArrowDownIcon /></div></div>
+        {/* <div className='show-all'><div className='show-el'>Ver tudo <KeyboardArrowDownIcon /></div></div> */}
     </div>
   )
 }

@@ -1,0 +1,68 @@
+[
+    {
+        "id":1,
+        "thumbImg":"./projects/thumb/mine-resi/thumb.webp",
+        "projectName":"Mine Resi",
+        "projectStacks":["html-css","javascript","api"],
+        "projectDesc":"Website do servidor do MineResi.",
+        "viaLink":[
+            {"demoLink":null},
+            {"githubLink":"https://github.com/almeidiano/mineresi"}
+        ]
+    },
+    {
+        "id":2,
+        "thumbImg":"./projects/thumb/resix/thumb.webp",
+        "projectName":"Resix",  
+        "projectStacks":["react","typescript","api","iot"],
+        "projectDesc":"Aplicativo criado com a finalidade de lançar fogos de artifício para o módulo IoT WiFi ESP8266 usando API (Vídeo demostração em breve!)",
+        "viaLink":[
+            {"demoLink":null},
+            {"githubLink":"https://github.com/almeidiano/resix"}
+        ]
+    },
+    {
+        "id":3,
+        "thumbImg":"./projects/thumb/ritual/thumb.webp",
+        "projectName":"Rithual Quiz",
+        "projectStacks":["react", "typescript", "javascript"],
+        "projectDesc":"Quiz que estima qual personagem você seria no universo de ૨¡Ƭષαℓ, um mangá brasileiro criado por EduBox.",
+        "viaLink":[
+            {"demoLink":"https://almeidiano.github.io/rithualquiz/"},
+            {"githubLink":"https://github.com/almeidiano/rithualquiz"}
+        ]
+    },
+    {
+        "id":4,
+        "thumbImg":"./projects/thumb/stack-school/thumb.webp",
+        "projectName":"Stack School",
+        "projectStacks":["react", "laravel", "api"],
+        "projectDesc":"Projeto MVC criado com Laravel com o intuito de gerenciar notas escolares.",
+        "viaLink":[
+            {"demoLink":null},
+            {"githubLink":null}
+        ]
+    },
+    {
+        "id":5,
+        "thumbImg":"./projects/thumb/3c/thumb.webp",
+        "projectName":"3CSOLUTION",
+        "projectStacks":["html-css","javascript","bootstrap","php"],
+        "projectDesc":"Website criado para a empresa 3C Solution do Brasil.",
+        "viaLink":[
+            {"demoLink":"https://3csolutiondobrasil.com.br/"},
+            {"githubLink":null}
+        ]
+    },
+    {
+        "id":6,
+        "thumbImg":"./projects/thumb/resi-map/thumb.webp",
+        "projectName":"Resi Map",
+        "projectStacks":["typescript", "threejs"],
+        "projectDesc":"Mapa 3D interativo usando ThreeJS.",
+        "viaLink":[
+            {"demoLink":"https://almeidiano.github.io/resi-map"},
+            {"githubLink":"https://github.com/almeidiano/resi-map"}
+        ]
+    }
+]

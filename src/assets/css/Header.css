@@ -38,8 +38,6 @@ header p{
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 100px;
-  align-items: end;
 }
 .know-me svg {
   color: #1976d2;
