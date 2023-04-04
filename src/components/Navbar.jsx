@@ -1,11 +1,7 @@
-import {useEffect, useRef, useState, Drawer} from 'react'
+import {useRef, useState} from 'react'
 import Logo from '/main-logo.svg';
-import Toggle from 'react-toggle';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-import LightModeIcon from '@mui/icons-material/LightMode';
 import MenuIcon from '@mui/icons-material/Menu';
-import "react-toggle/style.css";
-import { List, ListItem, ListItemText } from '@mui/material';
+import { Drawer, ListItem, ListItemText, ListItemButton } from '@mui/material';
 
 export default function Navbar(props) {
   const navbarRef = useRef();
@@ -20,26 +16,7 @@ export default function Navbar(props) {
     }
   }
 
-  const [theme, setTheme] = useState(false);
-
-  const toggleTheme = () => {
-    if(theme) {
-        setTheme(!theme);
-        localStorage.setItem('theme', 'white');
-        //white
-    }else {
-        setTheme(!theme);
-        localStorage.setItem('theme', 'dark');
-        //dark
-    }
-  }
-
-  let currentTheme = localStorage.getItem('theme');
-
-  useEffect(() => {
-    // Setting theme
-    theme ? document.documentElement.setAttribute("data-theme", "dark") : document.documentElement.setAttribute("data-theme", "white")
-  }, [theme]);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <nav ref={navbarRef}>
@@ -52,18 +29,24 @@ export default function Navbar(props) {
                             return <li key={item.id}><a href={item.href}>{item.name}</a></li>
                         })
                     }
-                    <li className='toggle-item'><Toggle 
-                    icons={{
-                        checked: <LightModeIcon />,
-                        unchecked: <DarkModeIcon />,
-                    }}
-                    onChange={toggleTheme}
-                    />
-                    </li>
-                    <li className='hamburguer-item'><MenuIcon/></li>
+                    <li className='hamburguer-item' onClick={() => setSidebarOpen(true)}><MenuIcon /></li>
                 </ul> 
             </div>
         </div>
+        <Drawer open={sidebarOpen} anchor="left" onClose={() => setSidebarOpen(false)}>
+            <div style={{ width: 250 }}>
+                <div className='sidebar-logo'><img src={Logo} /></div>
+                {
+                    props.items.map((item) => ( 
+                        <ListItem key={item.id}>
+                            <ListItemButton href={item.href} onClick={() => setSidebarOpen(false)}> 
+                                <ListItemText primary={item.name} />
+                            </ListItemButton>
+                        </ListItem>
+                    ))
+                }
+            </div>
+        </Drawer>
     </nav>
   )
 }

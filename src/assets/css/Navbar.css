@@ -60,14 +60,11 @@ nav ul li a {
 .toggle-item {
     color: var(--primary-white);
 }
-/* dark and light mode icons from toggle */
-.react-toggle-track-check svg,
-.react-toggle-track-x svg {
-    top: -5px;
-    margin: 0;
-    position: relative;
-    left: -5px;
-    font-size: 20px;
+/* sidebar */
+.sidebar-logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
 }
 
 @media (max-width: 768px) {

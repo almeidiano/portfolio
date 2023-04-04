@@ -11,14 +11,6 @@ Project rewrited via Vite
 
 <img src="https://a.pomf.cat/vflxbu.png" alt="Home Page">
 
-## :memo: Next Steps:
-
-- [x] Create sidebar 
-- [x] ~Generate Bros~
-- [x] ~Upload it to my domain~
-- [x] ~Make the form input true~
-- [x] Validate Form
-
 ## Getting Started
 
 ### Prerequisites

@@ -12,12 +12,6 @@ body {
   color: var(--text-secondary-blue);
 }
 
-/* ::-webkit-scrollbar {
-  width: 0.6rem;
-  background-color: var(--scroll-bar-color);
-  border-radius: 0.5rem;
-} */
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -97,30 +91,4 @@ section {
   --dark-background: rgb(25 28 29);
   --secondary-color-dark: #9c9487;
   --primary-color-dark: #d0ccc6
-}
-
-/* dark theme */
-html[data-theme='dark'] body{
-  background-color: var(--dark-background);
-  color: var(--secondary-color-dark);
-}
-
-/* i know there's something wrong below */
-html[data-theme='dark'] h1 {
-  color: var(--primary-color-dark);
-}
-html[data-theme='dark'] h2 {
-  color: var(--primary-color-dark);
-}
-html[data-theme='dark'] h3 {
-  color: var(--primary-color-dark);
-}
-html[data-theme='dark'] h4 {
-  color: var(--primary-color-dark);
-}
-html[data-theme='dark'] nav{
-  background-color: var(--dark-background);
-}
-html[data-theme='dark'] nav ul li a{
-  color: var(--primary-color-dark);
 }

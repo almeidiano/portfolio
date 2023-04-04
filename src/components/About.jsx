@@ -10,7 +10,7 @@ export default function About() {
         <div className='about container'>
           <div className='about-img'> <img src='/me.jpg' /> </div>
           <div className='about-info'> 
-            <p>Opa! <img src='/wave.gif' /><br/><br/>Meu nome é Samuel Almeida e sou entusiasta por tecnologia e inovação. Desde criança, aprendi muitas coisas sozinho como: design, programação, e inglês. Sempre amei essa área e sigo me aprimorando a cada dia. <br/><br/>Tenho anos de experiência em desenvolvimento web com freelances, ferramentas pessoais e UI/UX. Sempre entregando o melhor trabalho possível.</p> 
+            <p>Opa! <img src='/wave.gif' /><br/><br/>Meu nome é Samuel Almeida e sou entusiasta por tecnologia e inovação. Desde criança, aprendi muitas coisas sozinho como: design, programação, e inglês. Sempre amei essa área e sigo me aprimorando a cada dia. <br/><br/>Hoje, busco uma oportunidade para aplicar minhas habilidades e adquirir experiência trabalhando com desenvolvimento.</p> 
             <div className='social-media'>
               <a target='_blank' href='https://github.com/almeidiano'><GitHub /></a>
               <a target='_blank' href='https://www.linkedin.com/in/samuel-de-almeida'><LinkedIn /></a>
