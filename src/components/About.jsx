@@ -13,7 +13,7 @@ export default function About() {
           
           <br/>
 
-          Meu objetivo é me tornar em um profissional especializado em microserviços e desenvolvimento de APIs com Java, utilizando frameworks como Spring e suas derivações. Além disso, buscar aprofundar conhecimentos em ambientes cloud, utilizando Docker e serviços AWS (S3, SQS, SNS, Lambda, EC2, RDS, entre outros). Também pretendo me especializar em bancos de dados, incluindo Oracle, PostgreSQL, MySQL e NoSQL. 
+          Meu objetivo é me tornar em um profissional especializado, almejo aprender com profissionais experientes e competentes para alcançar conhecimentos de senioridade.
           </p> 
         <div class='my-2'>
           <a target='_blank' href='https://github.com/almeidiano'><GitHub /></a>
