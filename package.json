@@ -1,6 +1,5 @@
 {
   "name": "portfolio",
-  "homepage": "https://samuelalmeidadev.com.br/",
   "private": true,
   "version": "2.0.0",
   "type": "module",
@@ -27,6 +26,7 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "gh-pages": "^5.0.0",
+    "tailwindcss": "^3.4.4",
     "vite": "^4.1.0"
   }
 }

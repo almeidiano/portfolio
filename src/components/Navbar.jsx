@@ -20,7 +20,7 @@ export default function Navbar(props) {
 
   return (
     <nav ref={navbarRef}>
-        <div className='nav-container'>
+        <div className='nav-container py-4'>
             <div className="logo"> <a href="#home"><img src={Logo} /></a> </div> 
             <div className="nav-items"> 
                 <ul>

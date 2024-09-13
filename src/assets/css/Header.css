@@ -31,8 +31,12 @@ header p{
   width: 50%;
 }
 .bro-pic img{
-  position: relative;
-  opacity: 0;
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate(0px, 0px);
+  opacity: 1;
+  width: 500px;
 }
 .know-me {
   display: flex;

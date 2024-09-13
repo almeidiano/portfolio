@@ -20,7 +20,7 @@ export default function Portfolio() {
 
   useEffect(() => {
     async function getAllProjects() {
-      let req = await axios.get("https://samuelalmeidadev.com.br/allProjects.json");
+      let req = await axios.get("https://almeidiano.dev/allProjects.json");
       setProjects(req.data);
     } 
 
@@ -36,7 +36,7 @@ export default function Portfolio() {
 
   return (
     <section id='portfolio'>
-        <Title title='Portfolio' subtitle='Meus projetos mais revelantes' />
+        <Title title='Portfolio' subtitle='Meus projetos ou experiências mais revelantes' />
         <div className='container-fluid'>
         <Swiper loop={true} navigation={true} pagination={true} modules={[Navigation, Pagination]} className="mySwiper">
         {
@@ -51,13 +51,13 @@ export default function Portfolio() {
                     </div>
                   </div>
                   <div className='project-info'>
-                    <h2 className='project-title'>{project.projectName}</h2>
+                    <h2 className='text-2xl font-semibold'>{project.projectName}</h2>
                     <p className='project-desc'>{project.projectDesc}</p>
                     <div className='project-techs'>
                       {
                         project.projectStacks.map((stack) => (
                           <Tooltip title={stack}>
-                            <img src={`./projects/stacks/${stack}.svg`} />
+                            <img src={`https://almeidiano.dev/projects/stacks/${stack}.svg`} />
                           </Tooltip>
                         ))
                       }  

@@ -1,4 +1,4 @@
-import {GitHub, LinkedIn, YouTube, PictureAsPdf} from '@mui/icons-material';
+import {GitHub, LinkedIn} from '@mui/icons-material';
 import React from 'react';
 import Stacks from './api/Stacks';
 import Title from './Title';
@@ -6,20 +6,21 @@ import Title from './Title';
 export default function About() {
   return (
     <section id='about'>
-        <Title title='Sobre mim' subtitle='Minha introdução' />
-        <div className='about container'>
-          <div className='about-img'> <img src='/me.jpg' /> </div>
-          <div className='about-info'> 
-            <p>Opa! <img src='/wave.gif' /><br/><br/>Meu nome é Samuel Almeida e sou entusiasta por tecnologia e inovação. Desde criança, aprendi muitas coisas sozinho como: design, programação, e inglês. Sempre amei essa área e sigo me aprimorando a cada dia. <br/><br/>Hoje, busco uma oportunidade para aplicar minhas habilidades e adquirir experiência trabalhando com desenvolvimento.</p> 
-            <div className='social-media'>
-              <a target='_blank' href='https://github.com/almeidiano'><GitHub /></a>
-              <a target='_blank' href='https://www.linkedin.com/in/samuel-de-almeida'><LinkedIn /></a>
-              <a target='_blank' href='https://www.youtube.com/@EllSamuellTM'><YouTube /></a>
-              <a target='_blank' href='./curriculum.pdf'><PictureAsPdf /></a>
-            </div>
-          </div>
+      <div className='flex flex-col items-center'> 
+        <Title title='Sobre mim' subtitle='Minha Introdução' />
+        <p className='text-left container w-1/2'>
+          Desenvolvedor especializado em análise e desenvolvimento de software. Entusiasta por tecnologia e inovação, sigo estudando na área e trabalhando em projetos. Meu foco é garantir um mapeamento e análise precisos, resultando no desenvolvimento eficiente de soluções.<br/><br/>
+          
+          <br/>
+
+          Meu objetivo é me tornar em um profissional especializado em microserviços e desenvolvimento de APIs com Java, utilizando frameworks como Spring e suas derivações. Além disso, buscar aprofundar conhecimentos em ambientes cloud, utilizando Docker e serviços AWS (S3, SQS, SNS, Lambda, EC2, RDS, entre outros). Também pretendo me especializar em bancos de dados, incluindo Oracle, PostgreSQL, MySQL e NoSQL. 
+          </p> 
+        <div class='my-2'>
+          <a target='_blank' href='https://github.com/almeidiano'><GitHub /></a>
+          <a target='_blank' href='https://www.linkedin.com/in/samuel-de-almeida'><LinkedIn /></a>
         </div>
-        <Stacks />
+      </div>
+      <Stacks />
     </section>
   )
 }

@@ -37,7 +37,7 @@ export default function GenerateBros() {
 
   return (
     <>
-      <img ref={broRef} src={allBros[0]} />
+      <img className="h-[400px] w-[400px]" ref={broRef} src={allBros[0]} />
     </>
   )
 }

@@ -1,12 +1,8 @@
 export default function Footer() {
     return (
-      <footer>
-        <div className="container">
-          <div className="footer-credits">
-            <span>Samuel de Almeida/Almeidiano - 2022</span>
-            <span><a href="https://storyset.com/technology">Technology illustrations by Storyset</a></span>
-          </div>
-        </div>
+      <footer className="p-[25px] text-center bg-[#2263e3] text-white flex flex-col">
+        <span>Samuel de Almeida/Almeidiano - 2024</span>
+        <span><a href="https://storyset.com/technology">Technology illustrations by Storyset</a></span>
       </footer>
     )
   }
