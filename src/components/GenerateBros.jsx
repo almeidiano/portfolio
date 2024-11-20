@@ -19,21 +19,21 @@ export default function GenerateBros() {
   shuffle(allBros); 
 
   useLayoutEffect(() => {
-    gsap.fromTo(broRef.current, 
-    {
-      opacity: 0,
-      x: 50
-    },
-    
-    {
-      opacity: 1,
-      duration: 1.5, 
-      x: 0,
-      ease: "power3.out",
+    if (broRef.current) {
+      gsap.fromTo(broRef.current, 
+        {
+          opacity: 0,
+          x: 50
+        },
+        {
+          opacity: 1,
+          duration: 1.5,
+          x: 0,
+          ease: "power3.out",
+        }
+      );
     }
-
-    );
-  }); 
+  }, []); 
 
   return (
     <>

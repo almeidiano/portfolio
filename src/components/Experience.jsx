@@ -29,11 +29,11 @@ export default function Experience () {
         {/* 1 */}
         <div class="grid grid-cols-[1fr_max-content_1fr] gap-x-6">
             <div className='flex flex-col items-end'>
-                <h3 class="qualification__title">Desenvolvedor Full-Stack</h3>
-                <span class="text-sm">I Love Brides</span>
+                <h3 class="qualification__title">Estagiário de TI</h3>
+                <span class="text-sm">Unimed Recife</span>
                 <div class="text-xs opacity-80 py-2 flex items-center">
                     <CalendarMonthIcon />
-                    Ago 2023 - Presente
+                    Set 2024 - Presente
                 </div>
             </div>
             <div class="">

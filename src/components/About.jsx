@@ -9,7 +9,7 @@ export default function About() {
       <div className='flex flex-col items-center'> 
         <Title title='Sobre mim' subtitle='Minha Introdução' />
         <p className='text-left container w-1/2'>
-          Desenvolvedor especializado em análise e desenvolvimento de software. Entusiasta por tecnologia e inovação, sigo estudando na área e trabalhando em projetos. Meu foco é garantir um mapeamento e análise precisos, resultando no desenvolvimento eficiente de soluções.<br/><br/>
+          Desenvolvedor estagiário em análise e desenvolvimento de software. Entusiasta por tecnologia e inovação, sigo estudando na área e trabalhando em projetos. Meu foco é garantir um mapeamento e análise precisos, resultando no desenvolvimento eficiente de soluções.<br/><br/>
           
           <br/>
 
